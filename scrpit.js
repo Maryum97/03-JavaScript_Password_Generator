@@ -27,21 +27,31 @@ function buttonClicked(ev) {
     
     // Asking for special characters
     else {
-        confirm("Would you like your password to have special characters?")
+        alert("Your password must include special characters.")
 
     }   
 
     // Generating password
         var charSet = "";
 
+
+        // 1. Lower case
         var charType1 = confirm("Would you like your password to have lower case characters?")
 
         if(charType1 == true) {
           charSet = "abcdefghijklmnopqrstuvwxyz";
         } 
-        
+
+
+        // 2. Upper case
         else {
           var charType2 = confirm("Would you like your password to have upperr case characters?")
+
+               if (charType2 == true) {
+                   charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+            
+               } 
         } 
         
         // else if( charType.toLowerCase === "numeric" ) {
