@@ -53,36 +53,65 @@ function buttonClicked(ev) {
 function generatePassword() {
 
     // Setting types of characters in password
-    var charSet = "";
+    var options = buttonClicked();
+    console.log(options)
 
-    if (confirmSpecialChar == true) {
-        charSet = specialChar;
+    var passwordOutlook = [];
+    console.log(passwordOutlook)
+
+    if (options.specialCharacters) {
+        for (i = 0; i < specialChar.length; i++) {
+            passwordOutlook.push(specialChar[i]);
+        }
     }
 
-    else if (confirmLowerCase == true) {
-        charSet = lowerCase;
+    else if (options.lowerCaseCharacters) {
+        for (i = 0; lowerCase.length; i++) {
+            passwordOutlook.push(lowerCase[i]);
+        }
     }
 
-    else if (confirmUpperCase == true) {
-        charSet = upperCase;
+    else if (options.uppercaseCharacters) {
+        for (i = 0; upperCase.length; i++) {
+            passwordOutlook.push(upperCase[i]);
+        }
     }
     
-    else if ( confirmNumeric == true) {
-        charSet = numericChar;
+    else if (options.numericCharacters) {
+        for (i - 0; numericChar.length; i++) {
+            passwordOutlook.push(numericChar[i]);
+        }
     }
 
 
     // Picking random characters within the index of random number
-    var returnValue = "";
+    var returnValue = [];
 
-    for (var i = 0; i < length; i++) {
-        returnValue += charSet.charAt(Math.floor(Math.random()*charSet.length));
+    for (var i = 0; i < options.length; i++) {
+        var randomSelector = Math.floor(Math.random()*Math.floor(passwordOutlook.length));
+        returnValue.push(passwordOutlook[randomSelector])
     }
 
-    return returnValue;
+    console.log(returnValue)
+
+    var passwordFinal = returnValue.join('');
+    console.log(passwordFinal)
+
+    document.getElementById("password").textContent = passwordFinal;
 }
 
-alert(generatePassword());
+    // Copying password into textarea
+    var password = "";
+
+    function copyToLabel() {
+
+        document.getElementById("password").select();
+
+        document.execCommand("Copy");
+
+        alert("Your password has been copied to the textarea.")
+    }
 
 
+    generateBtn.addEventListener("click", generatePassword);
 
