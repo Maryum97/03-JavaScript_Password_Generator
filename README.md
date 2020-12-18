@@ -11,5 +11,13 @@ This repository contains the second homework assignment for the Coding Bootcamp 
 The files pushed to Github for thids homework include the following (descriptions included):
 
 <b>1. <i>index.html:</i></b>
+This file, as per usual, provides the basic skeletal structure of the webpage, including the head, the body layout, and the necessary elements inserted into the body of the page, e.g. headings and text.
+
+The head tags contain the links to the external CSS stylesheet (styles.css), and the Bootstrap website for CSS styling of the page, including that for the gutter (textbox), the floating label for the password, and the button. All the elements on the page are styled thoroughly and are fairly responsive, depending on the size of the window.
+
+The body tags contain the script tags at the end, containing the links to the external JavaScript file (script.js) and the Bootstrap website for the animational aspects of the page.
+
 <b>2. <i>script.js:</i><b>
+
+
 <b>3. <i>styles.css:</i><b>
