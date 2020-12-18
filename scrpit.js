@@ -103,4 +103,3 @@ function generatePassword() {
     }
 
     generateBtn.addEventListener("click", generatePassword);
-
