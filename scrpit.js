@@ -15,14 +15,14 @@ function buttonClicked(ev) {
     console.log(ev.type, ev.target, ev.currentTarget);
     
     // Asking for character length
-    var number = prompt("How many characters do you want your password to be?")
+    var length = prompt("How many characters do you want your password to be?")
 
-    if (number < 8) {
+    if (length < 8) {
         alert("Your password length must be between 8 and 128 characters.");
         return;
     }
 
-    else if (number > 128) {
+    else if (length > 128) {
         alert("Your password length must be between 8 and 128 characters.");
         return;
     }
@@ -39,7 +39,7 @@ function buttonClicked(ev) {
     }
 
     var charOptions = {
-        number : number,
+        length : length,
         specialCharacters: confirmSpecialChar,
         lowerCaseCharacters: confirmLowerCase,
         uppercaseCharacters: confirmUpperCase,
@@ -49,6 +49,40 @@ function buttonClicked(ev) {
     return charOptions;
 
 }
+
+function generatePassword() {
+
+    // Setting types of characters in password
+    var charSet = "";
+
+    if (confirmSpecialChar == true) {
+        charSet = specialChar;
+    }
+
+    else if (confirmLowerCase == true) {
+        charSet = lowerCase;
+    }
+
+    else if (confirmUpperCase == true) {
+        charSet = upperCase;
+    }
+    
+    else if ( confirmNumeric == true) {
+        charSet = numericChar;
+    }
+
+
+    // Picking random characters within the index of random number
+    var returnValue = "";
+
+    for (var i = 0; i < length; i++) {
+        returnValue += charSet.charAt(Math.floor(Math.random()*charSet.length));
+    }
+
+    return returnValue;
+}
+
+alert(generatePassword());
 
 
 
