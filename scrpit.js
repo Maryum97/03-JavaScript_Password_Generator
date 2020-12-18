@@ -13,16 +13,13 @@ function buttonClicked() {
     // Asking for character length
     var length = parseInt(prompt("How many characters do you want your password to be? Choose a number between 8 and 128."));
 
-    if (length < 8) {
-        alert("Your password length must be between 8 and 128 characters.");
-        return;
-    }
-
-    else if (length > 128) {
-        alert("Your password length must be between 8 and 128 characters.");
-        return;
-    }
+    // Creating a loop in case number below 8 or above 128 
+     while(length <= 7 || length >= 129) {
+    alert("Your password must be between 8 and 128 characters");
+    var length = (prompt("How many characters would you like your password to contain?"));
+    } 
     
+
     // Asking for character types:
 
     // Prompting user for special characters
@@ -68,19 +65,19 @@ function generatePassword() {
         }
     }
 
-    else if (options.lowerCaseCharacters) {
+    if (options.lowerCaseCharacters) {
         for (i = 0; i < lowerCase.length; ++i) {
             passwordOutlook.push(lowerCase[i]);
         }
     }
 
-    else if (options.uppercaseCharacters) {
+    if (options.uppercaseCharacters) {
         for (i = 0; i < upperCase.length; ++i) {
             passwordOutlook.push(upperCase[i]);
         }
     }
     
-    else if (options.numericCharacters) {
+    if (options.numericCharacters) {
         for (i = 0; i < numericChar.length; ++i) {
             passwordOutlook.push(numericChar[i]);
         }
@@ -103,20 +100,7 @@ function generatePassword() {
     document.getElementById("password").textContent = passwordFinal;
 
     alert("Here is your password:" + passwordFinal);
-}
-
-    // Copying password into textarea
-    var password = "";
-
-    function copyToLabel() {
-
-        document.getElementById("password").select();
-
-        document.execCommand("Copy");
-
-        alert("Your password has been copied to the textarea.")
     }
-
 
     generateBtn.addEventListener("click", generatePassword);
 
