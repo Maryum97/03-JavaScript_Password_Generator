@@ -1,4 +1,4 @@
-// Defining the button element (object) in JS
+// Defining the bobject(s)
 let generateBtn = document.getElementById("generate");
 
 // Adding event to the button element
@@ -11,8 +11,7 @@ var upperCase = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P'
 var numericChar = [0,1,2,3,4,5,6,7,8,9];
 
 // Defining the function
-function buttonClicked(ev) {
-    console.log(ev.type, ev.target, ev.currentTarget);
+function buttonClicked() {
     
     // Asking for character length
     var length = prompt("How many characters do you want your password to be?")
@@ -60,25 +59,25 @@ function generatePassword() {
     console.log(passwordOutlook)
 
     if (options.specialCharacters) {
-        for (i = 0; i < specialChar.length; i++) {
+        for (i = 0; i < specialChar.length; ++i) {
             passwordOutlook.push(specialChar[i]);
         }
     }
 
     else if (options.lowerCaseCharacters) {
-        for (i = 0; lowerCase.length; i++) {
+        for (i = 0; i < lowerCase.length; ++i) {
             passwordOutlook.push(lowerCase[i]);
         }
     }
 
     else if (options.uppercaseCharacters) {
-        for (i = 0; upperCase.length; i++) {
+        for (i = 0; i < upperCase.length; ++i) {
             passwordOutlook.push(upperCase[i]);
         }
     }
     
     else if (options.numericCharacters) {
-        for (i - 0; numericChar.length; i++) {
+        for (i - 0; i < numericChar.length; ++i) {
             passwordOutlook.push(numericChar[i]);
         }
     }
@@ -87,7 +86,7 @@ function generatePassword() {
     // Picking random characters within the index of random number
     var returnValue = [];
 
-    for (var i = 0; i < options.length; i++) {
+    for (var i = 0; i < options.length; ++i) {
         var randomSelector = Math.floor(Math.random()*Math.floor(passwordOutlook.length));
         returnValue.push(passwordOutlook[randomSelector])
     }
@@ -98,6 +97,8 @@ function generatePassword() {
     console.log(passwordFinal)
 
     document.getElementById("password").textContent = passwordFinal;
+
+    alert("Here is your password:" + passwordFinal);
 }
 
     // Copying password into textarea
