@@ -1,8 +1,5 @@
-// Defining the bobject(s)
+// Defining the object(s)
 let generateBtn = document.getElementById("generate");
-
-// Adding event to the button element
-generateBtn.addEventListener('click', buttonClicked);
 
 // Defining the characters
 var specialChar = ['#','$','%','&','(',')','*','+',',','-','.','/',':',';','<','=','>','?','@','['];
@@ -14,7 +11,7 @@ var numericChar = [0,1,2,3,4,5,6,7,8,9];
 function buttonClicked() {
     
     // Asking for character length
-    var length = prompt("How many characters do you want your password to be?")
+    var length = parseInt(prompt("How many characters do you want your password to be? Choose a number between 8 and 128."));
 
     if (length < 8) {
         alert("Your password length must be between 8 and 128 characters.");
@@ -26,10 +23,18 @@ function buttonClicked() {
         return;
     }
     
-    // Asking for character types 
+    // Asking for character types:
+
+    // Prompting user for special characters
     var confirmSpecialChar = confirm("Would you like your password to have special characters?");
+    
+     // Prompting user for lower case characters
     var confirmLowerCase = confirm("Would you like your password to have lower case characters?");
+    
+    // Prompting user for upper case characters
     var confirmUpperCase = confirm("Would you like your password to have upper case characters?");
+      
+    // Prompting user for numeric characters
     var confirmNumeric = confirm("Would you like your password to have numeric characters?");
 
     if (!confirmSpecialChar && !confirmLowerCase && !confirmUpperCase && !confirmNumeric) {
@@ -51,7 +56,6 @@ function buttonClicked() {
 
 function generatePassword() {
 
-    // Setting types of characters in password
     var options = buttonClicked();
     console.log(options)
 
@@ -77,7 +81,7 @@ function generatePassword() {
     }
     
     else if (options.numericCharacters) {
-        for (i - 0; i < numericChar.length; ++i) {
+        for (i = 0; i < numericChar.length; ++i) {
             passwordOutlook.push(numericChar[i]);
         }
     }
