@@ -4,11 +4,11 @@ let generateBtn = document.getElementById("generate");
 // Adding event to the button element
 generateBtn.addEventListener('click', buttonClicked);
 
-//Asking for Character types:
-// var confirmLowerCase = confirm("Would you like your password to have lower case characters?");
-// var confirmUpperCase = confirm("Would you like your password to have upper case characters?");
-// var confirmNumeric = confirm("Would you like your password to have numeric characters?");
-// var confirmSpecial = confirm("Would you like your password to have special characters?");
+// Defining the characters
+var specialChar = ['#','$','%','&','(',')','*','+',',','-','.','/',':',';','<','=','>','?','@','['];
+var lowerCase = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+var upperCase = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+var numericChar = [0,1,2,3,4,5,6,7,8,9];
 
 // Defining the function
 function buttonClicked(ev) {
@@ -19,58 +19,36 @@ function buttonClicked(ev) {
 
     if (number < 8) {
         alert("Your password length must be between 8 and 128 characters.");
+        return;
     }
 
     else if (number > 128) {
         alert("Your password length must be between 8 and 128 characters.");
+        return;
     }
     
-    // Asking for special characters
-    else {
-        alert("Your password must include special characters.")
+    // Asking for character types 
+    var confirmSpecialChar = confirm("Would you like your password to have special characters?");
+    var confirmLowerCase = confirm("Would you like your password to have lower case characters?");
+    var confirmUpperCase = confirm("Would you like your password to have upper case characters?");
+    var confirmNumeric = confirm("Would you like your password to have numeric characters?");
 
-    }   
+    if (!confirmSpecialChar && !confirmLowerCase && !confirmUpperCase && !confirmNumeric) {
+        alert("Your password must include at least one special, one numeric, one upper case and one lower case character.");
+        return;
+    }
 
-    // Generating password
-        var charSet = "";
+    var charOptions = {
+        number : number,
+        specialCharacters: confirmSpecialChar,
+        lowerCaseCharacters: confirmLowerCase,
+        uppercaseCharacters: confirmUpperCase,
+        numericCharacters: confirmNumeric
+    }
 
+    return charOptions;
 
-        // 1. Lower case
-        var charType1 = confirm("Would you like your password to have lower case characters?")
+}
 
-        if(charType1 == true) {
-          charSet = "abcdefghijklmnopqrstuvwxyz";
-        } 
-
-
-        // 2. Upper case
-        else {
-          var charType2 = confirm("Would you like your password to have upperr case characters?")
-
-               if (charType2 == true) {
-                   charSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-            
-               } 
-        } 
-        
-        // else if( charType.toLowerCase === "numeric" ) {
-        //   charSet = "0123456789";
-        // } 
-        
-        // else if( charType.toLowerCase === "special" ) {
-        //   charSet = " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-        // } 
-
-        // //return value
-        // var retVal = "";
-        // //for (var i = 0, n = charSet.length; i < length; i++) {
-        //   for (var i = 0, n = length; i < length; i++) {
-        //   //picks a character within charSet at index of random number
-        //   retVal += charSet.charAt(Math.floor(Math.random() * n));
-        // }
-        // console.log(retVal);
-        // return retVal;
-      }
 
 
