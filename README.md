@@ -30,7 +30,7 @@ This prompt asks the user to confirm the number of characters they want in their
 ii.     <div text-align = "centre">![Annotation 2020-12-20 125733](https://user-images.githubusercontent.com/73832871/102714230-2dd73080-42c5-11eb-9239-e9a3b2750c84.png)</div>
 This prompt asks the user if they want special characters in their password. Clicking on 'OK' means 'Yes', and 'Cancel' means 'No'. The password will have special characters on selecting 'OK', and will not on pressing 'Cancel'.
 
-The next prompts (in images iii., iv., and v.) will fulfil the next conditions in a similar way, REGARDLESS of the choice made in this prompt.
+The next prompts (in images iii., iv., and v.) will fulfil the next conditions in a similar way, REGARDLESS of the choice made in the preceding prompt.
 <br>
 <br>
 iii.    <div text-align = "centre">![Annotation 2020-12-20 125810](https://user-images.githubusercontent.com/73832871/102714233-2fa0f400-42c5-11eb-84c5-88c6bcfeed54.png)</div>
@@ -46,3 +46,4 @@ vi.     <div text-align = "centre">![Annotation 2020-12-20 130532](https://user-
 Finally, when all the choices have been made by the user, the last prompt appears on the screen with the user's new password. In the image above, the password contains ALL kinds of characters chosen by clickng on 'OK', whether special, lower case, upper case, or numeric. The length of the password is 76 characters, as confirmed by myself in the very first prompt.
 <br>
 <br>
+All these prompts are able to perform the desired and specific functions to fulfil the user's wishes, all made possible with the use of JavaScript and DOM (Document Object Model) events. Ultimately, the user is able to generate their own unique password via this app. Not only this, but the final password in the last prompt (in image vi.) ALSO shows up in the text area of the label in the webpage body, once the user clicks on 'OK'. Below is an image representing the same password in image vi., printed into the text area:
