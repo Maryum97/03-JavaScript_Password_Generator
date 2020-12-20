@@ -26,13 +26,18 @@ This is the most important file in this assignment, the JavaScript file, used to
 i.      <div text-align = "centre">![Annotation 2020-12-20 125527](https://user-images.githubusercontent.com/73832871/102714219-1730d980-42c5-11eb-805d-37755da725dc.png)</div>
 This prompt asks the user to confirm the number of characters they want in their password. When they select any number outside the given range (8-128), the next prompt states that the password length must be between the given range, and then the prompt in the iamge above appears again.
 <br>
+<br>
 ii.     <div text-align = "centre">![Annotation 2020-12-20 125733](https://user-images.githubusercontent.com/73832871/102714230-2dd73080-42c5-11eb-9239-e9a3b2750c84.png)</div>
-This prompt aska the user if they want special characters in their password. Clicking on 'OK' means 'Yes', and 'Cancel' means 'No'. The password will have special characters on selecting 'OK', and will not on pressing 'Cancel'. The next prompts will fulfil the next conditions in a similar way, REGARDLESS of the choice made in this prompt.
+This prompt asks the user if they want special characters in their password. Clicking on 'OK' means 'Yes', and 'Cancel' means 'No'. The password will have special characters on selecting 'OK', and will not on pressing 'Cancel'. The next prompts will fulfil the next conditions in a similar way, REGARDLESS of the choice made in this prompt.
+<br>
 <br>
 iii.    <div text-align = "centre">![Annotation 2020-12-20 125810](https://user-images.githubusercontent.com/73832871/102714233-2fa0f400-42c5-11eb-84c5-88c6bcfeed54.png)</div>
-<br>    
+<br> 
+<br>   
 iv.     <div text-align = "centre">![Annotation 2020-12-20 125844](https://user-images.githubusercontent.com/73832871/102714428-5e6b9a00-42c6-11eb-97da-72966b8dee7f.png)</div>
-<br>    
+<br>  
+<br>  
 v.      <div text-align = "centre">![Annotation 2020-12-20 125951](https://user-images.githubusercontent.com/73832871/102714430-60cdf400-42c6-11eb-8496-9d33d00d06a4.png)</div>
-<br>     
+<br>  
+<br>   
 vi.     <div text-align = "centre">![Annotation 2020-12-20 130532](https://user-images.githubusercontent.com/73832871/102714433-63304e00-42c6-11eb-9a1b-64fdb1704aa7.png)</div>
