@@ -99,7 +99,7 @@ function generatePassword() {
 
     document.getElementById("password").textContent = passwordFinal;
 
-    alert("Here is your password:" + passwordFinal);
+    alert("Here is your password:" + " " + passwordFinal);
     }
 
     generateBtn.addEventListener("click", generatePassword);
