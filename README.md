@@ -65,5 +65,8 @@ The URL to this website has been validated, with respect to the HTML code, on th
 <a href = "https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fmaryum97.github.io%2F03-JavaScript_Password_Generator%2F">validator.w3.org</a>
 
 <b>SOURCES USED:</b>
+<br>
 1.<a href = "https://www.w3schools.com/">w3schools.com</a>
+<br>
 2.<a href = "https://stackoverflow.com/questions">https://stackoverflow.com/questions</a>
+<br>
