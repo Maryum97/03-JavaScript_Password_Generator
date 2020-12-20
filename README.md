@@ -23,7 +23,7 @@ This is the external stylesheet for the index file, to add auxiliary styling for
 <b>3. <i>script.js:</i></b>
 This is the most important file in this assignment, the JavaScript file, used to make the webpage interactive towards the user (or the employee) generating their password. The Javascript includes the code for calling the 'Generate Password' button, so that when it is presseed, the page produces some popups to ask the user questions about the specifications for their new password. The prompts that popup on the webpage, on clicking on the button once, include the following:
 
-i.      ![Annotation 2020-12-20 125527](https://user-images.githubusercontent.com/73832871/102714219-1730d980-42c5-11eb-805d-37755da725dc.png)
+i.      <p align = "cemtre">![Annotation 2020-12-20 125527](https://user-images.githubusercontent.com/73832871/102714219-1730d980-42c5-11eb-805d-37755da725dc.png)<p>
 <br>
 ii.     ![Annotation 2020-12-20 125733](https://user-images.githubusercontent.com/73832871/102714230-2dd73080-42c5-11eb-9239-e9a3b2750c84.png)
 <br>
