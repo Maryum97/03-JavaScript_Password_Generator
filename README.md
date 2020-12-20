@@ -51,4 +51,20 @@ All these prompts are able to perform the desired and specific functions to fulf
 ![Annotation 2020-12-20 130548](https://user-images.githubusercontent.com/73832871/102714918-dd160680-42c9-11eb-83fb-747cfc399ffa.png)
 <br>
 
-This is how the deployed webpage looks; when the green button is pressed again, the same popups reappear on the user's screen in the same order as described above, generating a completely new password depending on the user's choices.
+This is how the deployed webpage looks; when the green button is pressed again, the same popups reappear on the user's screen in the same order as described above, generating a completely new password, depending on the user's choices. Using this app, the hypothetical company is at a great advantage, because of how safe and user-friendly their company website would prove to be for the employees. The employees would be able to generate their customised password, which they can safely use for their online application at the company.
+
+<b>SUMMARY:</b>
+In a nutshell, JavaScript is an extremely useful language as a programmer, because it allows the webpage to be made very interactive, animated, dynamic and user-friendly for anyone utilising the page or app. This Password Generator app is a perfect example of how, as a programmer, all the knowledge about HTML, CSS and JS can be amalgamated into one concise application, to act as an online facility for a client or an employee, whether it is business, education, employment, or for personal use.
+
+As per the marking criteria for this assignment, the link to the deployed website has been provided below:
+
+<a href = "https://maryum97.github.io/03-JavaScript_Password_Generator/">My Password Generator</a>
+
+The URL to this website has been validated, with respect to the HTML code, on the website below, and it has been shown to be 100% error free:
+
+<a href = "https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fmaryum97.github.io%2F03-JavaScript_Password_Generator%2F">validator.w3.org</a>
+
+<b>SOURECES USED:</b>
+1.
+2.
+3.
