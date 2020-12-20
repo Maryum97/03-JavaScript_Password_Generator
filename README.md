@@ -25,11 +25,12 @@ This is the most important file in this assignment, the JavaScript file, used to
 
 i.      <div text-align = "centre">![Annotation 2020-12-20 125527](https://user-images.githubusercontent.com/73832871/102714219-1730d980-42c5-11eb-805d-37755da725dc.png)</div>
 <br>
-ii.     ![Annotation 2020-12-20 125733](https://user-images.githubusercontent.com/73832871/102714230-2dd73080-42c5-11eb-9239-e9a3b2750c84.png)
+ii.     <div text-align = "centre">![Annotation 2020-12-20 125733](https://user-images.githubusercontent.com/73832871/102714230-2dd73080-42c5-11eb-9239-e9a3b2750c84.png)</div>
 <br>
-iii.
+iii.    <div text-align = "centre">![Annotation 2020-12-20 125810](https://user-images.githubusercontent.com/73832871/102714233-2fa0f400-42c5-11eb-84c5-88c6bcfeed54.png)</div>
 <br>    
-iv. 
+iv.     <div text-align = "centre">![Annotation 2020-12-20 125844](https://user-images.githubusercontent.com/73832871/102714428-5e6b9a00-42c6-11eb-97da-72966b8dee7f.png)</div>
 <br>    
-v. 
+v.      <div text-align = "centre">![Annotation 2020-12-20 125951](https://user-images.githubusercontent.com/73832871/102714430-60cdf400-42c6-11eb-8496-9d33d00d06a4.png)</div>
 <br>     
+vi.     <div text-align = "centre">![Annotation 2020-12-20 130532](https://user-images.githubusercontent.com/73832871/102714433-63304e00-42c6-11eb-9a1b-64fdb1704aa7.png)</div>
