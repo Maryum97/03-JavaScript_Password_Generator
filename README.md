@@ -18,6 +18,7 @@ The head tags contain the links to the external CSS stylesheet (styles.css), and
 The body tags contain the script tags at the end, containing the links to the external JavaScript file (script.js) and the Bootstrap website for the animational aspects of the page.
 
 <b>2. <i>script.js:</i><b>
-This is the external stylesheet for the index file, to add auxillary styling for some of the elements on the website.
+This is the external stylesheet for the index file, to add auxiliary styling for some of the elements on the website. Most of the styling, however, has benn carried out by utilising Bootstrap.
 
 <b>3. <i>styles.css:</i><b>
+This is the most important file in this assignment, the JavaScript file, used to make the webpage interactive towards the user (or the employee generating their password).
