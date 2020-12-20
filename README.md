@@ -24,11 +24,11 @@ This is the external stylesheet for the index file, to add auxiliary styling for
 This is the most important file in this assignment, the JavaScript file, used to make the webpage interactive towards the user (or the employee) generating their password. The Javascript includes the code for calling the 'Generate Password' button, so that when it is presseed, the page produces some popups to ask the user questions about the specifications for their new password. The prompts that popup on the webpage, on clicking on the button once, include the following (all the actions have been performed on the deployed webpage):
 
 i.      <div text-align = "centre">![Annotation 2020-12-20 125527](https://user-images.githubusercontent.com/73832871/102714219-1730d980-42c5-11eb-805d-37755da725dc.png)</div>
-This prompt asks the user to confirm the number of characters they want in their password. When they select any number outside the given range (8-128), the next prompt states that the password length must be between the given range, and then the prompt in the iamge above appears again.
+This prompt above asks the user to confirm the number of characters they want in their password. When they select any number outside the given range (8-128), the next prompt states that the password length must be between the given range, and then the prompt in the iamge above appears again.
 <br>
 <br>
 ii.     <div text-align = "centre">![Annotation 2020-12-20 125733](https://user-images.githubusercontent.com/73832871/102714230-2dd73080-42c5-11eb-9239-e9a3b2750c84.png)</div>
-This prompt asks the user if they want special characters in their password. Clicking on 'OK' means 'Yes', and 'Cancel' means 'No'. The password will have special characters on selecting 'OK', and will not on pressing 'Cancel'.
+This prompt above asks the user if they want special characters in their password. Clicking on 'OK' means 'Yes', and 'Cancel' means 'No'. The password will have special characters on selecting 'OK', and will not on pressing 'Cancel'.
 
 The next prompts (in images iii., iv., and v.) will fulfil the next conditions in a similar way, REGARDLESS of the choice made in the preceding prompt.
 <br>
@@ -64,7 +64,6 @@ The URL to this website has been validated, with respect to the HTML code, on th
 
 <a href = "https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fmaryum97.github.io%2F03-JavaScript_Password_Generator%2F">validator.w3.org</a>
 
-<b>SOURECES USED:</b>
-1.
-2.
-3.
+<b>SOURCES USED:</b>
+1.<a href = "https://www.w3schools.com/">w3schools.com</a>
+2.<a href = "https://stackoverflow.com/questions">https://stackoverflow.com/questions</a>
